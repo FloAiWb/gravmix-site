@@ -1,0 +1,10 @@
+
+.pricetable-wrap{overflow:auto;border:1px solid var(--stroke);border-radius:18px}
+table.pricetable{width:100%;border-collapse:collapse;background:var(--card)}
+table.pricetable th,table.pricetable td{border-bottom:1px solid var(--stroke);padding:10px 12px;text-align:left;vertical-align:top}
+table.pricetable th{position:sticky;top:0;background:#13171b;z-index:1}
+table.pricetable tr:hover{background:#151a1f}
+table.pricetable img{display:block;border-radius:8px;max-height:120px}
+.searchbar{display:flex;justify-content:center;margin:18px 0}
+.searchbar input{background:#11171b;border:1px solid var(--stroke);color:#e8e8e8;border-radius:12px;padding:12px 14px;min-width:320px}
+.note{color:#9aa3ab;text-align:center;margin:8px 0 24px}
