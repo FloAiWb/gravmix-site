@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GRAVMIX — лазерная гравировка в Староминской</title>
-  <meta name="description" content="GRAVMIX: лазерная гравировка в Староминской. Брелоки со знаками зодиака, браслеты с молитвами, иконы на камне. Изготовление за 1 день.">
+  <meta name="description" content="GRAVMIX: лазерная гравировка в Староминской. Брелоки со знаками зодиака, браслеты с молитвами, таблички. Изготовление за 1 день.">
   <meta property="og:title" content="GRAVMIX — лазерная гравировка в Староминской">
-  <meta property="og:description" content="Быстро и аккуратно. Брелоки, браслеты, иконы, сувениры. Изготовление за 1 день.">
+  <meta property="og:description" content="Брелоки, браслеты, сувениры. Быстро и аккуратно. Изготовление за 1 день.">
   <meta property="og:image" content="img/og-cover.jpg">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/png" sizes="32x32" href="img/logo/gravmix-32.png">
@@ -15,6 +15,37 @@
   <link rel="manifest" href="manifest.json">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .price-controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:center;margin:16px 0 24px}
+    .price-controls input{background:#11171b;border:1px solid var(--stroke);color:#e8e8e8;border-radius:12px;padding:12px 14px;min-width:260px}
+    .price-controls a.btn{white-space:nowrap}
+    .price-hint{color:#9aa3ab;text-align:center;margin:8px 0 24px}
+    .pricetable-wrap{overflow:auto;border:1px solid var(--stroke);border-radius:18px}
+    table.pricetable{width:100%;border-collapse:collapse;background:var(--card)}
+    table.pricetable th,table.pricetable td{border-bottom:1px solid var(--stroke);padding:12px 14px;text-align:left;vertical-align:top}
+    table.pricetable th{position:sticky;top:0;background:#13171b;z-index:1}
+    table.pricetable tr:hover{background:#151a1f}
+    table.pricetable td a{color:#61dafb}
+    .price-updated{color:#9aa3ab;text-align:center;margin-top:14px}
+  </style>
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+        k=e.createElement(t); a=e.getElementsByTagName(t)[0]; k.async=1; k.src=r; a.parentNode.insertBefore(k,a);
+    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=103505862', 'ym');
+
+    ym(103505862, 'init', {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+    });
+    function ymGoal(name){ try{ ym(103505862,'reachGoal',name); } catch(e){} }
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/103505862" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
 </head>
 <body>
 <header class="header">
@@ -28,20 +59,20 @@
     <a href="#contacts">Контакты</a>
     <a href="#about">О нас</a>
   </nav>
-  <a class="cta" href="https://wa.me/79996930620" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="cta" href="https://wa.me/79996930620" target="_blank" rel="noopener" onclick="ymGoal('whatsapp_click')">WhatsApp</a>
 </header>
 
 <section id="home" class="hero">
   <div class="hero-inner">
     <h1>Лазерная гравировка в Староминской — изготовление за 1 день</h1>
-    <p class="lead">Брелоки, браслеты, иконы, таблички. Быстро, аккуратно, по вашему макету — макет бесплатно.</p>
+    <p class="lead">Брелоки, браслеты, таблички. Быстро, аккуратно, по вашему макету — макет бесплатно.</p>
     <div class="hero-ctas">
-      <a class="btn primary" href="https://wa.me/79996930620" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      <a class="btn primary" href="https://wa.me/79996930620" target="_blank" rel="noopener" onclick="ymGoal('whatsapp_click')">Написать в WhatsApp</a>
       <a class="btn ghost" href="#portfolio">Смотреть работы</a>
     </div>
     <ul class="bullets">
       <li>Староминская, ул. Набережная, 133А</li>
-      <li><a href="tel:+79996930620">+7 999 693‑06‑20</a></li>
+      <li><a href="tel:+79996930620" onclick="ymGoal('call_click')">+7 999 693‑06‑20</a></li>
       <li>Срок: от 1 дня</li>
     </ul>
   </div>
@@ -56,7 +87,7 @@
     </div>
     <div class="svc">
       <h3>Гравировка на дереве</h3>
-      <p>Иконы, коробки, таблички, шкатулки, разделочные доски.</p>
+      <p>Коробки, таблички, шкатулки, разделочные доски.</p>
     </div>
     <div class="svc">
       <h3>Браслеты с гравировкой</h3>
@@ -72,133 +103,114 @@
 <section id="portfolio" class="section">
   <h2>Портфолио</h2>
   <h3 class="cat-title">Знаки зодиака — металлические брелоки</h3>
-<div class="cards">
-<a class="card" href="img/portfolio/zodiak/gravmix-zodiak-oven-starominskaya-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Овен». Лазерная гравировка, GRAVMIX, Староминская."
-       src="img/portfolio/zodiak/gravmix-zodiak-oven-starominskaya-1200.webp"
-       srcset="img/portfolio/zodiak/gravmix-zodiak-oven-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-oven-starominskaya-2400.webp 2x" width="900" height="900">
-  <span class="caption">Овен</span>
-</a>
-<a class="card" href="img/portfolio/zodiak/gravmix-zodiak-telec-starominskaya-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Телец». Лазерная гравировка, GRAVMIX, Староминская."
-       src="img/portfolio/zodiak/gravmix-zodiak-telec-starominskaya-1200.webp"
-       srcset="img/portfolio/zodiak/gravmix-zodiak-telec-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-telec-starominskaya-2400.webp 2x" width="900" height="900">
-  <span class="caption">Телец</span>
-</a>
-<a class="card" href="img/portfolio/zodiak/gravmix-zodiak-bliznecy-starominskaya-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Близнецы». Лазерная гравировка, GRAVMIX, Староминская."
-       src="img/portfolio/zodiak/gravmix-zodiak-bliznecy-starominskaya-1200.webp"
-       srcset="img/portfolio/zodiak/gravmix-zodiak-bliznecy-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-bliznecy-starominskaya-2400.webp 2x" width="900" height="900">
-  <span class="caption">Близнецы</span>
-</a>
-<a class="card" href="img/portfolio/zodiak/gravmix-zodiak-rak-starominskaya-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Рак». Лазерная гравировка, GRAVMIX, Староминская."
-       src="img/portfolio/zodiak/gravmix-zodiak-rak-starominskaya-1200.webp"
-       srcset="img/portfolio/zodiak/gravmix-zodiak-rak-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-rak-starominskaya-2400.webp 2x" width="900" height="900">
-  <span class="caption">Рак</span>
-</a>
-<a class="card" href="img/portfolio/zodiak/gravmix-zodiak-lev-starominskaya-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Лев». Лазерная гравировка, GRAVMIX, Староминская."
-       src="img/portfolio/zodiak/gravmix-zodiak-lev-starominskaya-1200.webp"
-       srcset="img/portfolio/zodiak/gravmix-zodiak-lev-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-lev-starominskaya-2400.webp 2x" width="900" height="900">
-  <span class="caption">Лев</span>
-</a>
-<a class="card" href="img/portfolio/zodiak/gravmix-zodiak-deva-starominskaya-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Дева». Лазерная гравировка, GRAVMIX, Староминская."
-       src="img/portfolio/zodiak/gravmix-zodiak-deva-starominskaya-1200.webp"
-       srcset="img/portfolio/zodiak/gravmix-zodiak-deva-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-deva-starominskaya-2400.webp 2x" width="900" height="900">
-  <span class="caption">Дева</span>
-</a>
-<a class="card" href="img/portfolio/zodiak/gravmix-zodiak-vesy-starominskaya-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Весы». Лазерная гравировка, GRAVMIX, Староминская."
-       src="img/portfolio/zodiak/gravmix-zodiak-vesy-starominskaya-1200.webp"
-       srcset="img/portfolio/zodiak/gravmix-zodiak-vesy-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-vesy-starominskaya-2400.webp 2x" width="900" height="900">
-  <span class="caption">Весы</span>
-</a>
-<a class="card" href="img/portfolio/zodiak/gravmix-zodiak-scorpion-starominskaya-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Скорпион». Лазерная гравировка, GRAVMIX, Староминская."
-       src="img/portfolio/zodiak/gravmix-zodiak-scorpion-starominskaya-1200.webp"
-       srcset="img/portfolio/zodiak/gravmix-zodiak-scorpion-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-scorpion-starominskaya-2400.webp 2x" width="900" height="900">
-  <span class="caption">Скорпион</span>
-</a>
-<a class="card" href="img/portfolio/zodiak/gravmix-zodiak-strelec-starominskaya-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Стрелец». Лазерная гравировка, GRAVMIX, Староминская."
-       src="img/portfolio/zodiak/gravmix-zodiak-strelec-starominskaya-1200.webp"
-       srcset="img/portfolio/zodiak/gravmix-zodiak-strelec-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-strelec-starominskaya-2400.webp 2x" width="900" height="900">
-  <span class="caption">Стрелец</span>
-</a>
-<a class="card" href="img/portfolio/zodiak/gravmix-zodiak-kozerog-starominskaya-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Козерог». Лазерная гравировка, GRAVMIX, Староминская."
-       src="img/portfolio/zodiak/gravmix-zodiak-kozerog-starominskaya-1200.webp"
-       srcset="img/portfolio/zodiak/gravmix-zodiak-kozerog-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-kozerog-starominskaya-2400.webp 2x" width="900" height="900">
-  <span class="caption">Козерог</span>
-</a>
-<a class="card" href="img/portfolio/zodiak/gravmix-zodiak-vodoley-starominskaya-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Водолей». Лазерная гравировка, GRAVMIX, Староминская."
-       src="img/portfolio/zodiak/gravmix-zodiak-vodoley-starominskaya-1200.webp"
-       srcset="img/portfolio/zodiak/gravmix-zodiak-vodoley-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-vodoley-starominskaya-2400.webp 2x" width="900" height="900">
-  <span class="caption">Водолей</span>
-</a>
-<a class="card" href="img/portfolio/zodiak/gravmix-zodiak-ryby-starominskaya-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Рыбы». Лазерная гравировка, GRAVMIX, Староминская."
-       src="img/portfolio/zodiak/gravmix-zodiak-ryby-starominskaya-1200.webp"
-       srcset="img/portfolio/zodiak/gravmix-zodiak-ryby-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-ryby-starominskaya-2400.webp 2x" width="900" height="900">
-  <span class="caption">Рыбы</span>
-</a>
-</div>
-<h3 class="cat-title">Браслеты с молитвами</h3>
-<div class="cards">
-<a class="card" href="img/portfolio/bracelets/gravmix-bracelet-bracelet-otche-nash-12mm-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Браслет «Отче наш» 12 мм. Силикон/металл, лазерная гравировка, GRAVMIX."
-       src="img/portfolio/bracelets/gravmix-bracelet-bracelet-otche-nash-12mm-1200.webp" srcset="img/portfolio/bracelets/gravmix-bracelet-bracelet-otche-nash-12mm-1200.webp 1x, img/portfolio/bracelets/gravmix-bracelet-bracelet-otche-nash-12mm-2400.webp 2x" width="900" height="675">
-  <span class="caption">Браслет «Отче наш» 12 мм</span>
-</a>
-<a class="card" href="img/portfolio/bracelets/gravmix-bracelet-bracelet-angelu-hranitelyu-15mm-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Браслет «Ангелу хранителю» 15 мм. Силикон/металл, лазерная гравировка, GRAVMIX."
-       src="img/portfolio/bracelets/gravmix-bracelet-bracelet-angelu-hranitelyu-15mm-1200.webp" srcset="img/portfolio/bracelets/gravmix-bracelet-bracelet-angelu-hranitelyu-15mm-1200.webp 1x, img/portfolio/bracelets/gravmix-bracelet-bracelet-angelu-hranitelyu-15mm-2400.webp 2x" width="900" height="675">
-  <span class="caption">Браслет «Ангелу хранителю» 15 мм</span>
-</a>
-</div>
-<h3 class="cat-title">Иконы на декоративном камне 19×14</h3>
-<div class="cards">
-<a class="card" href="img/portfolio/icons/gravmix-icons-ikona-kreshchenie-gospodne-19x14-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Икона «Крещение Господне» 19×14. Лазерная гравировка, GRAVMIX."
-       src="img/portfolio/icons/gravmix-icons-ikona-kreshchenie-gospodne-19x14-1200.webp" srcset="img/portfolio/icons/gravmix-icons-ikona-kreshchenie-gospodne-19x14-1200.webp 1x, img/portfolio/icons/gravmix-icons-ikona-kreshchenie-gospodne-19x14-2400.webp 2x" width="900" height="675">
-  <span class="caption">Икона «Крещение Господне» 19×14</span>
-</a>
-<a class="card" href="img/portfolio/icons/gravmix-icons-ikona-neupivaemaya-chasha-19x14-2400.webp" target="_blank" rel="noopener">
-  <img loading="lazy" decoding="async" alt="Икона «Неупиваемая чаша» 19×14. Лазерная гравировка, GRAVMIX."
-       src="img/portfolio/icons/gravmix-icons-ikona-neupivaemaya-chasha-19x14-1200.webp" srcset="img/portfolio/icons/gravmix-icons-ikona-neupivaemaya-chasha-19x14-1200.webp 1x, img/portfolio/icons/gravmix-icons-ikona-neupivaemaya-chasha-19x14-2400.webp 2x" width="900" height="675">
-  <span class="caption">Икона «Неупиваемая чаша» 19×14</span>
-</a>
-</div>
+  <div class="cards">
+    
+    <a class="card" href="img/portfolio/zodiak/gravmix-zodiak-oven-starominskaya-2400.webp" target="_blank" rel="noopener">
+      <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Овен». Лазерная гравировка, GRAVMIX, Староминская."
+           src="img/portfolio/zodiak/gravmix-zodiak-oven-starominskaya-1200.webp" srcset="img/portfolio/zodiak/gravmix-zodiak-oven-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-oven-starominskaya-2400.webp 2x" width="900" height="900">
+      <span class="caption">Овен</span>
+    </a>
+
+    <a class="card" href="img/portfolio/zodiak/gravmix-zodiak-telec-starominskaya-2400.webp" target="_blank" rel="noopener">
+      <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Телец». Лазерная гравировка, GRAVMIX, Староминская."
+           src="img/portfolio/zodiak/gravmix-zodiak-telec-starominskaya-1200.webp" srcset="img/portfolio/zodiak/gravmix-zodiak-telec-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-telec-starominskaya-2400.webp 2x" width="900" height="900">
+      <span class="caption">Телец</span>
+    </a>
+
+    <a class="card" href="img/portfolio/zodiak/gravmix-zodiak-bliznecy-starominskaya-2400.webp" target="_blank" rel="noopener">
+      <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Близнецы». Лазерная гравировка, GRAVMIX, Староминская."
+           src="img/portfolio/zodiak/gravmix-zodiak-bliznecy-starominskaya-1200.webp" srcset="img/portfolio/zodiak/gravmix-zodiak-bliznecy-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-bliznecy-starominskaya-2400.webp 2x" width="900" height="900">
+      <span class="caption">Близнецы</span>
+    </a>
+
+    <a class="card" href="img/portfolio/zodiak/gravmix-zodiak-rak-starominskaya-2400.webp" target="_blank" rel="noopener">
+      <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Рак». Лазерная гравировка, GRAVMIX, Староминская."
+           src="img/portfolio/zodiak/gravmix-zodiak-rak-starominskaya-1200.webp" srcset="img/portfolio/zodiak/gravmix-zodiak-rak-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-rak-starominskaya-2400.webp 2x" width="900" height="900">
+      <span class="caption">Рак</span>
+    </a>
+
+    <a class="card" href="img/portfolio/zodiak/gravmix-zodiak-lev-starominskaya-2400.webp" target="_blank" rel="noopener">
+      <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Лев». Лазерная гравировка, GRAVMIX, Староминская."
+           src="img/portfolio/zodiak/gravmix-zodiak-lev-starominskaya-1200.webp" srcset="img/portfolio/zodiak/gravmix-zodiak-lev-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-lev-starominskaya-2400.webp 2x" width="900" height="900">
+      <span class="caption">Лев</span>
+    </a>
+
+    <a class="card" href="img/portfolio/zodiak/gravmix-zodiak-deva-starominskaya-2400.webp" target="_blank" rel="noopener">
+      <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Дева». Лазерная гравировка, GRAVMIX, Староминская."
+           src="img/portfolio/zodiak/gravmix-zodiak-deva-starominskaya-1200.webp" srcset="img/portfolio/zodiak/gravmix-zodiak-deva-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-deva-starominskaya-2400.webp 2x" width="900" height="900">
+      <span class="caption">Дева</span>
+    </a>
+
+    <a class="card" href="img/portfolio/zodiak/gravmix-zodiak-vesy-starominskaya-2400.webp" target="_blank" rel="noopener">
+      <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Весы». Лазерная гравировка, GRAVMIX, Староминская."
+           src="img/portfolio/zodiak/gravmix-zodiak-vesy-starominskaya-1200.webp" srcset="img/portfolio/zodiak/gravmix-zodiak-vesy-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-vesy-starominskaya-2400.webp 2x" width="900" height="900">
+      <span class="caption">Весы</span>
+    </a>
+
+    <a class="card" href="img/portfolio/zodiak/gravmix-zodiak-scorpion-starominskaya-2400.webp" target="_blank" rel="noopener">
+      <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Скорпион». Лазерная гравировка, GRAVMIX, Староминская."
+           src="img/portfolio/zodiak/gravmix-zodiak-scorpion-starominskaya-1200.webp" srcset="img/portfolio/zodiak/gravmix-zodiak-scorpion-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-scorpion-starominskaya-2400.webp 2x" width="900" height="900">
+      <span class="caption">Скорпион</span>
+    </a>
+
+    <a class="card" href="img/portfolio/zodiak/gravmix-zodiak-strelec-starominskaya-2400.webp" target="_blank" rel="noopener">
+      <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Стрелец». Лазерная гравировка, GRAVMIX, Староминская."
+           src="img/portfolio/zodiak/gravmix-zodiak-strelec-starominskaya-1200.webp" srcset="img/portfolio/zodiak/gravmix-zodiak-strelec-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-strelec-starominskaya-2400.webp 2x" width="900" height="900">
+      <span class="caption">Стрелец</span>
+    </a>
+
+    <a class="card" href="img/portfolio/zodiak/gravmix-zodiak-kozerog-starominskaya-2400.webp" target="_blank" rel="noopener">
+      <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Козерог». Лазерная гравировка, GRAVMIX, Староминская."
+           src="img/portfolio/zodiak/gravmix-zodiak-kozerog-starominskaya-1200.webp" srcset="img/portfolio/zodiak/gravmix-zodiak-kozerog-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-kozerog-starominskaya-2400.webp 2x" width="900" height="900">
+      <span class="caption">Козерог</span>
+    </a>
+
+    <a class="card" href="img/portfolio/zodiak/gravmix-zodiak-vodoley-starominskaya-2400.webp" target="_blank" rel="noopener">
+      <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Водолей». Лазерная гравировка, GRAVMIX, Староминская."
+           src="img/portfolio/zodiak/gravmix-zodiak-vodoley-starominskaya-1200.webp" srcset="img/portfolio/zodiak/gravmix-zodiak-vodoley-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-vodoley-starominskaya-2400.webp 2x" width="900" height="900">
+      <span class="caption">Водолей</span>
+    </a>
+
+    <a class="card" href="img/portfolio/zodiak/gravmix-zodiak-ryby-starominskaya-2400.webp" target="_blank" rel="noopener">
+      <img loading="lazy" decoding="async" alt="Брелок со знаком зодиака «Рыбы». Лазерная гравировка, GRAVMIX, Староминская."
+           src="img/portfolio/zodiak/gravmix-zodiak-ryby-starominskaya-1200.webp" srcset="img/portfolio/zodiak/gravmix-zodiak-ryby-starominskaya-1200.webp 1x, img/portfolio/zodiak/gravmix-zodiak-ryby-starominskaya-2400.webp 2x" width="900" height="900">
+      <span class="caption">Рыбы</span>
+    </a>
+  </div>
+
+  <h3 class="cat-title">Браслеты с молитвами</h3>
+  <div class="cards">
+    <a class="card" href="img/portfolio/bracelets/gravmix-bracelet-bracelet-otche-nash-12mm-2400.webp" target="_blank" rel="noopener">
+      <img loading="lazy" decoding="async" alt="Браслет «Отче наш» — пластина 12 мм. Силикон/металл, лазерная гравировка, GRAVMIX."
+           src="img/portfolio/bracelets/gravmix-bracelet-bracelet-otche-nash-12mm-1200.webp"
+           srcset="img/portfolio/bracelets/gravmix-bracelet-bracelet-otche-nash-12mm-1200.webp 1x, img/portfolio/bracelets/gravmix-bracelet-bracelet-otche-nash-12mm-2400.webp 2x" width="900" height="675">
+      <span class="caption">Браслет «Отче наш», пластина 12 мм</span>
+    </a>
+    <a class="card" href="img/portfolio/bracelets/gravmix-bracelet-bracelet-angelu-hranitelyu-15mm-2400.webp" target="_blank" rel="noopener">
+      <img loading="lazy" decoding="async" alt="Браслет «Ангелу хранителю» — пластина 15 мм. Силикон/металл, лазерная гравировка, GRAVMIX."
+           src="img/portfolio/bracelets/gravmix-bracelet-bracelet-angelu-hranitelyu-15mm-1200.webp"
+           srcset="img/portfolio/bracelets/gravmix-bracelet-bracelet-angelu-hranitelyu-15mm-1200.webp 1x, img/portfolio/bracelets/gravmix-bracelet-bracelet-angelu-hranitelyu-15mm-2400.webp 2x" width="900" height="675">
+      <span class="caption">Браслет «Ангелу хранителю», пластина 15 мм</span>
+    </a>
+  </div>
 </section>
 
 <section id="prices" class="section">
   <h2>Цены</h2>
-  <div class="pricegrid">
-    <div class="pricecard">
-      <h4>Брелок, металл</h4>
-      <div class="price">от 500 ₽</div>
-      <p>Одна сторона, стандартный макет.</p>
-    </div>
-    <div class="pricecard">
-      <h4>Браслет, пластина</h4>
-      <div class="price">от 700 ₽</div>
-      <p>Текст/молитва, базовая верстка.</p>
-    </div>
-    <div class="pricecard">
-      <h4>Икона на камне 19×14</h4>
-      <div class="price">от 1500 ₽</div>
-      <p>Подготовка по образцу, контраст, ретушь.</p>
-    </div>
-    <div class="pricecard">
-      <h4>Тираж</h4>
-      <div class="price">опт</div>
-      <p>Скидки при количестве ≥ 10 шт.</p>
-    </div>
+
+  <div class="price-controls">
+    <input id="price-search" type="search" placeholder="Фильтр: артикул, наименование, материалы…" aria-label="Поиск по прайсу">
+    <a class="btn" id="price-csv" href="https://docs.google.com/spreadsheets/d/1dGgeaCOek04YqBndKAIeCTmKdtSUPH_-kwb0TWIx09Y/export?format=csv&gid=588667145" target="_blank" rel="noopener">Скачать CSV</a>
   </div>
-  <p class="note">Итоговая стоимость зависит от сложности макета, материала и тиража. Посчитаем по фото изделия в WhatsApp.</p>
+  <p class="price-hint">Данные подгружаются напрямую из Google Sheets. Итоговая стоимость зависит от тиража и макета — уточним в WhatsApp.</p>
+
+  <div class="pricetable-wrap">
+    <table class="pricetable" id="price-table" aria-describedby="price-updated">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <p class="price-updated" id="price-updated"></p>
 </section>
 
 <section id="contacts" class="section">
@@ -206,8 +218,8 @@
   <div class="contacts">
     <div>
       <p><strong>Адрес:</strong> Староминская, ул. Набережная, 133А</p>
-      <p><strong>Телефон:</strong> <a href="tel:+79996930620">+7 999 693‑06‑20</a></p>
-      <p><strong>В мессенджерах:</strong> <a href="https://wa.me/79996930620" target="_blank" rel="noopener">WhatsApp</a>, <a href="https://t.me/gravmixTT" target="_blank" rel="noopener">Telegram</a></p>
+      <p><strong>Телефон:</strong> <a href="tel:+79996930620" onclick="ymGoal('call_click')">+7 999 693‑06‑20</a></p>
+      <p><strong>В мессенджерах:</strong> <a href="https://wa.me/79996930620" target="_blank" rel="noopener" onclick="ymGoal('whatsapp_click')">WhatsApp</a>, <a href="https://t.me/gravmixTT" target="_blank" rel="noopener">Telegram</a></p>
       <p><strong>Соцсети и маркетплейсы:</strong><br>
         <a href="https://vk.com/gravmix" target="_blank" rel="noopener">VK</a> ·
         <a href="https://www.ozon.ru/seller/s-lyubovyu-2225969/" target="_blank" rel="noopener">Ozon</a> ·
@@ -226,8 +238,9 @@
   <p>© 2025 GRAVMIX. Староминская. Все права защищены.</p>
 </footer>
 
-<a class="whatsapp-fab" href="https://wa.me/79996930620" target="_blank" aria-label="Написать в WhatsApp">WA</a>
+<a class="whatsapp-fab" href="https://wa.me/79996930620" target="_blank" aria-label="Написать в WhatsApp" onclick="ymGoal('whatsapp_fab')">WA</a>
 
-<script src="js/main.js"></script>
+<script src="js/pricelist.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

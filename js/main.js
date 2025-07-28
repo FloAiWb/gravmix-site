@@ -1,1 +1,1 @@
-// JS можно добавить позже (lightbox, аналитика и т.д.)
+// custom scripts can be added here
